@@ -1,0 +1,21 @@
+rule "Startup system"
+when
+	System started
+then
+	Alarm_MasterTime.sendCommand(String::format("%02d:%02d", alarmTime.getHourOfDay(), alarmTime.getMinuteOfHour()))
+end
+
+rule "A cada uma hora"
+when
+    Time cron "0 0 0/1 1/1 * ? *"
+then
+	if (Alarm_MasterTimeMins.state == Undefined)
+	{
+		postUpdate(Alarm_MasterTimeMins, 345)
+	}
+
+	if (now.getHourOfDay <=4 || now.getHourOfDay>=10
+	{
+		Tom_gTER_Cafeteira.sendCommand(OFF)
+	}
+end

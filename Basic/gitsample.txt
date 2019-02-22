@@ -1,0 +1,4 @@
+Switch Livingroom_Light "Livingroom Ceiling Light" <myswitch>
+Contact Livingroom_Window "Ventana del salón [MAP(window_esp.map):%s]"
+
+Group:Switch e "label" <icon> (otherGroup)

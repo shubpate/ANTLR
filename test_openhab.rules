@@ -1,0 +1,16 @@
+rule "Startup system"
+when
+	System started
+then
+
+	Alarm_MasterTime.sendCommand(String::format(ddd, alarmTime.getHourOfDay(), alarmTime.getMinuteOfHour()))
+
+end
+rule "Startup system"
+when
+	System started
+then
+
+	Alarm_MasterTime.sendCommand(String::format(ddd, alarmTime.getHourOfDay(), alarmTime.getMinuteOfHour()))
+
+end

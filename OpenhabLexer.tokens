@@ -1,0 +1,17 @@
+SingleRule=1
+Rule=2
+When=3
+Then=4
+End=5
+NormalLiteral=6
+RuleLiteral=7
+WS=8
+NEWLINE=9
+CR=10
+LF=11
+'rule '=2
+'when'=3
+'then'=4
+'end'=5
+'\r'=10
+'\n'=11
